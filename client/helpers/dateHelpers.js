@@ -3,7 +3,7 @@ Template.registerHelper('longDate', function(date) {
 });
 
 Template.registerHelper('calendarDay', function(date) {
-  return moment(date).format('dddd');
+  return moment(date).locale('es').format('dddd');
 });
 
 Template.registerHelper('calendarDate', function(date) {
